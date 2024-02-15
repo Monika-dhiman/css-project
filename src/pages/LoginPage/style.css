@@ -1,0 +1,18 @@
+.log-in-page{
+    display: flex;
+    height: 100vh;
+    background: #F5F5F5;
+}
+.left-side{
+    width: 30vw;
+    display: flex;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+.right-side{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
