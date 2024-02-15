@@ -3,7 +3,7 @@ import "./style.css";
 import AppName from "../../components/LogIn/AppName";
 import LogInSide from "../../components/LogIn/LogInSide";
 
-export const LogIn = () => {
+const LogIn = () => {
   return (
     <div className="log-in-page">
       <div className="left-side">
@@ -15,3 +15,4 @@ export const LogIn = () => {
     </div>
   );
 };
+export default LogIn;

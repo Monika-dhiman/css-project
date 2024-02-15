@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-
+// import { google-icon } from "../../assets"
 const LogInForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -11,11 +11,11 @@ const LogInForm = () => {
   return (
     <div className= "log-in-container">
     <div>
-    <span>Sign In</span><br />  
+    <span className='heading'>Sign In</span><br />  
     <span>Sign in to your account</span>
     </div>
-    <div classname="button-container">
-      <button className='google-btn'>Sign in with Google</button>
+    <div className="button-container">
+      <button className='google-btn'><img src={""} className="" alt="logo" /> Sign in with Google</button>
       <button className='facebook-btn'>Sign in with Facebook</button>
     </div>
     <div className='log-in-form'>
@@ -34,7 +34,7 @@ const LogInForm = () => {
       
     </div>
     <div className='footer'>
-    <p>Don't have an account? <a href="">Register here</a></p>
+    <span>Don't have an account? <a href="">Register here</a></span>
     </div>
 </div>
   )
