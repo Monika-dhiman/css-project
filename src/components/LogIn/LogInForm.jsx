@@ -1,6 +1,9 @@
 import React from 'react'
 import './style.css'
-// import { google-icon } from "../../assets"
+import google   from '../../assets/google.svg'
+import apple from '../../assets/apple.svg'
+import { Link } from 'react-router-dom'
+
 const LogInForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -15,8 +18,12 @@ const LogInForm = () => {
     <span>Sign in to your account</span>
     </div>
     <div className="button-container">
-      <button className='google-btn'><img src={""} className="" alt="logo" /> Sign in with Google</button>
-      <button className='facebook-btn'>Sign in with Facebook</button>
+      <button >
+        <img src={google} height={"14px"} width={"14px"} alt="logo" /> Sign in with Google
+        </button>
+      <button>
+        <img src={apple} height={"14px"} width={"14px"}alt="logo" /> Sign in with Facebook
+        </button>
     </div>
     <div className='log-in-form'>
         <div className='input-fields'>
@@ -25,16 +32,16 @@ const LogInForm = () => {
         </div>
         <div className='input-fields'>
           <label htmlFor="password">Password</label><br/> 
-          <input id="password" name="password" />
+          <input id="password" name="password" type='password' />
         </div>
         <div>
-          <a href="">Forgot password?</a>
+          <span style={{color:"#346BD4"}}>Forgot password?</span>
         </div>
         <button className='submit-btn' type="submit" onClick={handleSubmit}> Sign In </button>
       
     </div>
     <div className='footer'>
-    <span>Don't have an account? <a href="">Register here</a></span>
+    <span>Don't have an account? </span> <span style={{color:"#346BD4"}}>Register here</span>
     </div>
 </div>
   )

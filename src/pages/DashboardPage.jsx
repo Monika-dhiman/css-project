@@ -5,11 +5,14 @@ import { Sidebar } from '../components/Dashboard/Sidebar/Sidebar';
 const DashboardPage = () => {
   return (
     <div className='dashboard-page'>
+      
+
       <div>
         <Sidebar />
       </div>
       <div>
         <Dashboard />
+      
       </div>
     </div>
   )

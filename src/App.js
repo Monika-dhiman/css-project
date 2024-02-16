@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import DashboardPage from "./pages/DashboardPage";
 import LogIn from "./pages/LoginPage/LogIn";
@@ -5,8 +6,12 @@ import LogIn from "./pages/LoginPage/LogIn";
 function App() {
   return (
     <div className="App">
-      {/* <DashboardPage /> */}
-      <LogIn />
+      
+      <Routes>
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/" element={<LogIn />} />
+      </Routes>
+      
     </div>
   );
 }
