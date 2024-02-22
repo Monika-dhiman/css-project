@@ -1,6 +1,7 @@
 .sidebar-container{
     padding: 60px 50px;
-    width: 280px;
+    min-width: 280px;
+    /* m-width: 180px; */
     background-color: #000000;
     color: #fff;
     height: calc(100vh - 185px);
@@ -31,6 +32,7 @@
 }
 .menu-item{
     display:flex;
+    align-items: center;
     gap: 8px;
     cursor: pointer;
     text-decoration: none;
@@ -38,4 +40,10 @@
     text-align: left;
     font-size: 18px;
 }
-.menu-item::hover{}
+/* .menu-item span{
+    background-color: red;
+} */
+.menu-item img{
+    width: 18px;
+    height: 18px;
+}

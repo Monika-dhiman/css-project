@@ -1,16 +1,15 @@
 import React from 'react'
 import "./style.css";
+import Header from './Header/Header';
+import Information from './Information/Information';
+import ActivitiesChart from '../Charts/ActivitiesChart';
 const Dashboard = () => {
   return (
     <div className='dashboard-side'>
-      <div className="header-container">
-        <p>DashBoard</p>
-      </div>
-      <div className="information-container">
-        <p>Information</p>
-      </div>
+        <Header />
+        <Information />
       <div className="graph-container">
-        <p>Graph</p>
+        <ActivitiesChart />
       </div>
       <div className="chart-container">
         <p>Chart</p>

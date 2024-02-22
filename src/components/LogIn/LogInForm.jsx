@@ -2,14 +2,16 @@ import React from 'react'
 import './style.css'
 import google   from '../../assets/google.svg'
 import apple from '../../assets/apple.svg'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const LogInForm = () => {
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
-    e.preventDefault()
-    const email = e.target.email.value
-    const password = e.target.password.value
-    console.log(email, password);
+    e.preventDefault();
+    navigate('/dashboard');
+    // const email = e.target.email.value
+    // const password = e.target.password.value
+    // console.log(email, password);
   }
   return (
     <div className= "log-in-container">

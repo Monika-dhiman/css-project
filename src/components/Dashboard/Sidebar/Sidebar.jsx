@@ -1,34 +1,40 @@
 import React from 'react'
 import './style.css'
-import google from '../../../assets/google.svg'
+import user from '../../../assets/user.svg'
+import dashboard from '../../../assets/dashboard.svg'
+import schedule from '../../../assets/schedule.svg'
+import transaction from '../../../assets/transaction.svg'
+import setting from '../../../assets/setting.svg'
 import { Link } from 'react-router-dom'
 export const Sidebar = () => {
+  
   return (
     <div className='sidebar-container'>
       <div className="sidebar-header">
         <p>Baord.</p>
       </div>
       <div className="sidebar-menu">
-        <div className="menu-item">
-          <img src={google} alt="" /> 
+        
+        <Link to="/" className="menu-item">
+          <img src={dashboard} alt="" /> 
           <span>Dashboard</span>
-        </div>
-        <div className="menu-item">
-          <img src={google} alt="" /> 
+        </Link>
+        <Link to="/" className="menu-item">
+          <img src={transaction} alt="" /> 
           <span>Transactions</span>
-        </div>
-        <Link to="" className="menu-item">
-          <img src={google} alt="" /> 
+        </Link>
+        <Link to="/" className="menu-item">
+          <img src={schedule} alt="" /> 
           <span>Schedules</span>
         </Link>
-        <div className="menu-item">
-          <img src={google} alt="" /> 
+        <Link to="/" className="menu-item">
+          <img src={user} alt="" /> 
           <span>Users</span>
-        </div>
-        <div className="menu-item">
-          <img src={google} alt="" /> 
+        </Link>
+        <Link to="/" className="menu-item">
+          <img src={setting} alt="" /> 
           <span>Settings</span>
-        </div>
+        </Link>
         </div>  
       <div className="sidebar-footer">
         <p>Help</p>
