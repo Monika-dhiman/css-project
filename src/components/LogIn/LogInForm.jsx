@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 import google   from '../../assets/google.svg'
 import apple from '../../assets/apple.svg'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const LogInForm = () => {
   const navigate = useNavigate();

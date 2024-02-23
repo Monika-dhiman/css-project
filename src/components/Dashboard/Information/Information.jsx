@@ -16,7 +16,7 @@ const Information = () => {
         <img src={revenues} alt="" />
         </div>
       </div>
-      <div className="information-item">
+      <div className="information-item" style={{backgroundColor:"#F4ECDD"}}>
         <div className="text">
           <span className="title">Total Transactions</span>
           <span className="data">1,520</span>
@@ -26,7 +26,7 @@ const Information = () => {
         <img src={transaction} alt="" />
         </div>
       </div>
-      <div className="information-item">
+      <div className="information-item" style={{backgroundColor:"#EFDADA"}}>
         <div className="text">
           <span className="title">Total Likes</span>
           <span className="data">9,721</span>
@@ -35,7 +35,7 @@ const Information = () => {
         <img src={likes} alt="" />
         </div>
       </div>
-      <div className="information-item">
+      <div className="information-item" style={{backgroundColor:"#DEE0EF"}}>
         <div className="text">
             
           <span className="title">Total Users</span>

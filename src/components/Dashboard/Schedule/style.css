@@ -1,0 +1,28 @@
+.schedule-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+   width: calc(( 100% / 2) - 100px);
+   min-width: 450px;
+   flex:1;
+}
+.schedule-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.schedule-header .title{
+    font-size: 18px;
+    font-weight: 700;
+}
+.schedule-header .see-all{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #858585;
+}
